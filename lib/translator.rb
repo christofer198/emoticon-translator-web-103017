@@ -20,7 +20,9 @@ def get_japanese_emoticon(yaml_path, emoticon)
   # code goes here
   emoticon_library = load_library(yaml_path)
   emoticon_library.each do |key, value|
-    puts value
+    value.each do |nkey, nval|
+      puts nval
+    end
   end
 end
 
