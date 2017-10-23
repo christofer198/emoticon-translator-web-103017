@@ -8,7 +8,7 @@ def load_library(yaml_path)
   yaml_hash.each do |key, value|
     value.each do |emoticon|
       emoticon_library["get_meaning"][emoticon] = key
-      emoticon_library["get_emoticon"][value[0]] = key
+      emoticon_library["get_emoticon"][value[0]] = value[1]
     end
   end
   emoticon_library
