@@ -21,7 +21,7 @@ def get_japanese_emoticon(yaml_path, emoticon)
   emoticon_library = load_library(yaml_path)
   emoticon_library.each do |key, value|
     value.each do |nkey, nval|
-      return emoticon_library[emoticon]
+      puts emoticon_library[emoticon]
     end
   end
 end
