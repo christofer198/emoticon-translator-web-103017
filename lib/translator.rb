@@ -22,7 +22,7 @@ def get_japanese_emoticon(yaml_path, emoticon)
   emoticon_library.each do |key, value|
     value.each do |nkey, nval|
       if emoticon_library[emoticon] == nval
-        puts nval
+        return nval
       end
     end
   end
