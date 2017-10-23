@@ -28,4 +28,10 @@ end
 
 def get_english_meaning
   # code goes here
+  emoticon_library = load_library(yaml_path)
+  if emoticon_library["get_emoticon"].include?(emoticon)
+    return emoticon_library["get_emoticon"][emoticon]
+  end
+
+   return"Sorry, that emoticon was not found"
 end
